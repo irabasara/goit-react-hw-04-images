@@ -4,7 +4,6 @@ import css from './modal.module.css';
 export const Modal = ({ onModalClose, largeImage }) => {
   const handleBackdropeClick = e => {
     if (e.target === e.currentTarget) {
-      console.log('bac');
       onModalClose();
     }
   };
@@ -12,7 +11,6 @@ export const Modal = ({ onModalClose, largeImage }) => {
   useEffect(() => {
     const handleKeyDown = e => {
       if (e.code === `Escape`) {
-        console.log('esc');
         onModalClose();
       }
     };
